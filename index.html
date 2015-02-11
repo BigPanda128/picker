@@ -13,7 +13,7 @@
 <body>
     <h3>Dice roller: Pick one</h3>
     <div></div>
-    <input type="button" onclick="chooseOne('cmp237')" value="4 Sides"/>
+    <input type="button" onclick="chooseOne('4')" value="4 Sides"/>
     <input type="button" onclick="chooseOne('cmp344')" value="6 Sides"/>
     <input type="button" onClick="chooseOne('cmp341')" value="10 Sides"/>
     <input type="button" onclick="chooseOne('cmp112')" value="16 Sides"/>
@@ -26,7 +26,7 @@
     // Note: It's an array of objects, each of which is a map
     //		and the value for each map is an array of names
 
-    var courses = { "cmp237": ['Craig Austgen','Daniel Davis','Benjamin Davisson','William Decker','Zachary Dickinson','Katie Harold','Eric Heinzman','Phillip Hofer','Troy Key','Andrew Klump','Kyle Lowtharp','Collin Mullis','Gabriel Perez','Ryan Postma','Kevin Regner','Andrew Ribicki','Connor Ring','Nathan Samano','Griffin Scott','Jared Smith'], "cmp112": ['Thaddeus Albert','Dan Amador','Bruce Anderson','Zachary Aring','Benjamin Davisson','Jace Horner','Carl Jones','Kyle Lowtharp','Declan McCarron','Collin Mullis','Yemi Ogunbameru','Andrew Ribicki','Christian Sexton','Houston Shimala','Ryan Slipher','Jared Smith','Ashlee Troop'], "cmp344": ['Craig Austgen','Daniel Davis','Dylan Gainey','Lucas Grube','Eric Heinzman','Katelyn Herre','Phillip Hofer','Andrew Klump','Ryan Postma','Nathan Samano','Danilo Zekovic'], "cmp341": ['Craig Austgen','Lucas Grube','Eric Heinzman','Phillip Hofer','Nathan Samano','Danilo Zekovic']}
+    var courses = { "4": ['1','2','3','4'], "cmp112": ['Thaddeus Albert','Dan Amador','Bruce Anderson','Zachary Aring','Benjamin Davisson','Jace Horner','Carl Jones','Kyle Lowtharp','Declan McCarron','Collin Mullis','Yemi Ogunbameru','Andrew Ribicki','Christian Sexton','Houston Shimala','Ryan Slipher','Jared Smith','Ashlee Troop'], "cmp344": ['Craig Austgen','Daniel Davis','Dylan Gainey','Lucas Grube','Eric Heinzman','Katelyn Herre','Phillip Hofer','Andrew Klump','Ryan Postma','Nathan Samano','Danilo Zekovic'], "cmp341": ['Craig Austgen','Lucas Grube','Eric Heinzman','Phillip Hofer','Nathan Samano','Danilo Zekovic']}
  
 
     function chooseOne(course) {
