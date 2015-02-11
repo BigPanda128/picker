@@ -1,10 +1,8 @@
-<!-- Program to choose a random student from one class of several
-
-	Brian Capouch
-	4 February 2015
-
+<!-- Dice picker program
+	Ryan Postma
+	2/10/2015
+	CMP237
 -->
-
   <!-- Use jQuery from a CDN -->                      
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
@@ -19,8 +17,7 @@
     <input type="button" onclick="chooseOne('16')" value="16 Sides"/>
     <input type="button" onclick="chooseOne('20')" value="20 Sides"/>
     <script>
-    // Brian Capouch, ready to retire the old hat
-    // Choose a random student from a given class	
+    // Make board gaming easier	
 
     // Course rosters object
     // Note: It's an array of objects, each of which is a map
@@ -41,7 +38,7 @@
       var which = Math.floor(Math.random() * n);
 
       // Set string with value of result
-      var result = 'Chosen: ' + thisClass[which];
+      var result = 'Result: ' + thisClass[which];
 
       // Clear out the div, and then fill it with fresh
       // This is the wonderful, invisible work of jQuery
